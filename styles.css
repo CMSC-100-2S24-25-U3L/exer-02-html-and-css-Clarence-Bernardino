@@ -1,48 +1,155 @@
 /*
 Name: Clarence Joshua T. Bernardino	Student #: 2023 - 00166 
-Section: U-3L				Date created: February 1,2 2025 Date Finished: TBA
+Section: U-3L				Date created: February 12, 2025 Date Finished: TBA
 This code will style the website to simulate a resume of cv
 */
 
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #f5f5dc;
-}
-
-.header {
-    background: #e3923d;
-    color: white;  /* Text color */
+    background-color: #1E2A38;
+    color: #F5F5F5;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    padding: 5px;
-    font-size: 24px;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-  }
-  
+/* Header */
+.header {
+    background: #111E2E;
+    padding: 15px;
+}
 
+.logo {
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
 .nav {
     display: flex;
     justify-content: center;
-    background: #ebac69;
+    gap: 20px;
     padding: 10px;
 }
 
 .nav a {
-    color: white;
+    color: #FFD700;
     text-decoration: none;
-    padding: 10px 20px;
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.3s;
 }
 
 .nav a:hover {
-    background: #e1af79;
+    color: #F5F5F5;
 }
 
-.container {
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    background: #ffcc00;
+    color: black;
+    border: none;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
+
+#backToTop:hover {
+    background: #e0b700;
+}
+
+/* profPic Section */
+.profPic {
+    margin: 50px auto;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+}
+
+/* Skills Section */
+.skills {
+    padding: 40px;
+    background: #162A40;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.skill-card {
+    background: #233A57;
+    padding: 15px;
+    border-radius: 8px;
+    color: #FFD700;
+    font-weight: bold;
+}
+
+/* Projects Section */
+.projects {
+    padding: 40px;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: #233A57;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#about {
+    max-width: 670px; 
+    margin: 50px auto;
     padding: 20px;
-    text-align: center;
+    color: #ddd;
+    border-radius: 10px;
+}
+
+#about p {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Footer */
+.footer {
+    background: #111E2E;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }

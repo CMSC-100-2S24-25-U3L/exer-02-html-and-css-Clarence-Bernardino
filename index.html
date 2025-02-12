@@ -1,31 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script src="script.js"></script>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="header">
-        <img src="Pictures/logo.jpg" width="20%" alt="logo" image class="center">
-    </div>
-    
-    <div class="nav">
-        <a href="#">Home</a>
-        <a href="#">Past Projects</a>
-        <a href="#">Contact</a>
-        <a href="#">About</a>
-    </div>
+    <!-- header with logo -->
+    <header class="header">
+        <img src="Pictures/logo.jpg" alt="logo" class="logo">
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#projects">Past Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
 
-    <div class="container">
-        <img src="Pictures/HTC_Heritage Library_Red Flowers 02Element 2.png" width="5" alt="logo" image class="center">
-        <img src="Pictures/profilePic.jpg" width="20%" alt="logo" image class="center">
-        <img src="Pictures/HTC_Heritage Library_Red Flowers 02Element 4.png" width="5%" alt="logo" image class="center">
-    </div>
+    <!-- profPic section -->
+    <section class="profPic" id = "home">
+        <img src="Pictures/profilePic.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>Clarence Bernardino</h1>
+    </section>
 
+    <!-- skills section -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML & CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">React.js</div>
+            <div class="skill-card">Java</div>
+            <div class="skill-card">C Programming</div>
+            <div class="skill-card">R (Data Science)</div>
+            <div class="skill-card">Certified Microsoft Excel Expert</div>
+            <div class="skill-card">Picture and Video Editing</div>
+        </div>
+    </section>
+
+    <!-- projects section -->
+    <section class="projects" id="projects">
+        <h2>Past Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="Pictures/project1.jpg" alt="Project 1" height="215px">
+                <p>Flight Simulation in C</p>
+            </div>
+            <div class="project-card">
+                <img src="Pictures/project2.jpg" alt="Project 2" >
+                <p>Restaurant Management System in R</p>
+            </div>
+            <div class="project-card">
+                <img src="Pictures/project3.jpg" alt="Project 3" height="215px">
+                <p>Autopets Copycat in Java</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            An intermediate-level C programmer with 4+ years of experience developing and maintaining enterprise software applications. 
+            Adept in system analysis, development, testing, debugging, and production support. Experienced in development practices that follow the Think principle. 
+            Proficient in communicating effectively among colleagues, with extensive experience in coordinating, leading, and sharing technical ideas directly with clients.
+        </p>
+    </section>
+
+    <button id="backToTop">↑ Back to Top</button>
+
+    <!-- footer -->
+    <footer class="footer" id="contact">
+        <p>Grass Residences QC | +63 977 032 8892 | ctbernardino@up.edu.ph</p>
+        <img src="Pictures/logo.jpg" alt="logo" class="logo"> <a href="https://cmsc-100-2s24-25-u3l.github.io/exer-02-html-and-css-Clarence-Bernardino/">Personal Website</a></p> 
+    </footer>
 </body>
 
 </html>
