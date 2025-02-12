@@ -1,0 +1,48 @@
+/*
+Name: Clarence Joshua T. Bernardino	Student #: 2023 - 00166 
+Section: U-3L				Date created: February 1,2 2025 Date Finished: TBA
+This code will style the website to simulate a resume of cv
+*/
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f5f5dc;
+}
+
+.header {
+    background: #e3923d;
+    color: white;  /* Text color */
+    text-align: center;
+    padding: 5px;
+    font-size: 24px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+  }
+  
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background: #ebac69;
+    padding: 10px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.nav a:hover {
+    background: #e1af79;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
